@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Sayfa Başlık </title>
+        <meta name="keywords" content="Anahtar kelimeleri arama motoruna iletmemizi sağlar">
+        <meta name="description" content="Sayfa açıklaması">
+        <meta name="author" content="Şeymanur Özker">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        </div> 
+            <div class="container bg-secondary"> deneme kolonları
+           <div class="row g-0">   <!--hem yatay hem dikeyde 5 e kadar olan kenar boşluğu ayarlamamızı sağlar. -->
+           <div class="col-12 col-md-4 bg-primary"> Kolon 1</div>  <!--col-12 alt alta veriir-->
+           <div class="col-12 col-md-4 bg-success"> Kolon 2</div>   <!-- col-md-4 mobil boyuta sahipse alt alta yazar ,kolonu alt alta koyar-->
+           <div class="col-12 col-md-4 bg-black"> Kolon 3</div>
+           <div class="col-12 col-md-4 bg-danger"> Kolon 3</div>
+           </div>
+        </div></br></br></br></hr></br>
+        <div class="container-md bg-secondary">
+            <!-- <div class="row bg-dark" style="height: 200px">-->
+              <div class=" bg-warning text-center order-last">İçerik 1</div><!--text center yazımızı  ortalar. -->
+              <div class=" bg-danger text-center">İçerik 2</div>
+              <div class=" bg-success text-center order-first">İçerik 3</div>
+            </div></br></br></br></hr></br>
+            <div class="row bg-dark" style="height: 200px">
+              <div class="col-4 bg-warning text-center order-3">İçerik 1</div>
+              <div class="col-4 bg-danger text-center order-1">İçerik 2</div>
+              <div class="col-4 bg-success text-center order-2">İçerik 3</div>
+            </div> </br></br></br></hr></br>
+            <div class="row bg-dark" style="height: 200px"> <!--"row bg-dark aligin-items-end  end'den dolayı en alta alır. end yerine start derseniz en başa alır, strech dersek varsayılandır."-->
+              <div class="col-12 col-md-4 bg-warning text-center order-3 order-md-1">İçerik 1 </div><!-- order-3 iken mobildeki yerlerini değiştiriyorsunuz. -->
+              <div class="col-12 col-md-4 bg-danger text-center order-1 order-md-2">İçerik 2 </div><!--order-md-1  webdeki sırasını ayarlarız.-->
+              <div class="col-12 col-md-4 bg-success text-center order-2 order-md-3"> İçerik 3 </div>
+            </div> <!--"justify-content-center" eklersek row yanına 2 içerik verdiysek örneğin içerikleri sayfaya göre ortalar. center yerine betwen yazarsak iki yana aralayacak ve ortalayacaktır.-->
+    </body>        <!--aynı zamanda center yerine arount dersek yanlara da birbirlerinede aralıklı olurlar. Evenly dersek ise bütün aralıklar eşit olarak yazılır.-->
+</html>
