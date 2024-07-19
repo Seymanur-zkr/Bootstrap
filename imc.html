@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Sayfa Başlık </title>
+        <meta name="keywords" content="Anahtar kelimeleri arama motoruna iletmemizi sağlar">
+        <meta name="description" content="Sayfa açıklaması">
+        <meta name="author" content="Şeymanur Özker">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    </head>
+    <body>
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+            <!-- placeholder.com https://dummyimage.com  https://picsum.photos https://placekitten.com (fotoğraf boyutlarını görmek için kullanılabilecek örnek siteler.)-->
+          <div class="container mt-4">
+              <h1> Normal Resim Ekleme </h1>
+              <img
+              src="https://dummyimage.com/800x600/000/fff" 
+              alt="Resim hakkında bilgi"
+              />
+              <br><br><br>
+              <h1> İmg-fluid İle Resim Ekleme </h1><!---->
+              <img
+               src="https://dummyimage.com/800x600/000/fff" 
+               class="img-fluid" 
+               alt="Resim hakkında bilgi"
+               />
+              <!--  class="img-fluid" denildiğinde mobile göre resim boyutu ayarlanır. Responsive duyarlı şekilde tam olarak gözükür.-->
+              <br><br><br>
+              <h1> İmg-thumbnail Resim Önizlemesi Küçük boyut </h1>
+              <img
+               src="https://dummyimage.com/200x150/000/fff"  
+               class="img-thumbnail float-start" 
+               alt="Resim hakkında bilgi"
+               />
+               <img
+               src="https://dummyimage.com/200x150/000/fff"  
+               class="img-thumbnail float-end" 
+               alt="Resim hakkında bilgi"
+               />
+               <img
+               src="https://dummyimage.com/200x150/000/fff"  
+               class="img-thumbnail mx-auto d-block" 
+               alt="Resim hakkında bilgi"
+               />
+               <!-- class="img-thumbnail float-start"  dendiğinde sayfa başına ekler resminizi.-->
+               <!-- class="img-thumbnail float-end" dendiğinde sayfa sonuna ekler resminizi.-->
+               <!-- class="img-fluid mx-auto d-block" dendiğinde sayfa ortasına resminizi ekler.-->
+               <!-- Sass değişkenleri için kullanımları mevcuttur.-->
+            </div>
+    </body>
+</html>
